@@ -6,6 +6,13 @@ function MyButton() {
     );
 }
 
+// array of products
+const products = [
+    { title: 'Cabbage', id:1 },
+    { title: 'Garlic', id: 2},
+    { title: 'Apple', id: 3},
+];
+
 export default function MyApp() {
     // logic - javascript
     let paramClassname = "avata"
@@ -15,8 +22,14 @@ export default function MyApp() {
     if (paramClassname === "avata") {
         paramClassname = "avatar"
     } else {
-        // logic
+        // else logic
     }
+
+    const listItems = products.map(product =>
+        <li key={product.id}>
+            {product.title}
+        </li>    
+    );
 
     return (
         //ui - jsx
@@ -32,6 +45,7 @@ export default function MyApp() {
                     height: {paramSize}
                 }}
             />
+            <ul>{listItems}</ul>
         </>
     );
 }

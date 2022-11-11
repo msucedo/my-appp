@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import SearchFiltered from './SearchFiltered'
 import reportWebVitals from './reportWebVitals';
+
+import SearchFiltered from './SearchFiltered'
+import PracticeSyntax from './PracticeSyntax'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SearchFiltered />
+    <PracticeSyntax />
   </React.StrictMode>
 );
 

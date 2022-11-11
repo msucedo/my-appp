@@ -12,7 +12,11 @@ export default function MyApp() {
     const paramImgURL = 'https://i.imgur.com/yXOvdOSs.jpg'
     let paramSize = 90
     
-    paramClassname == "avata" ? "avatar" : "avatar"
+    if (paramClassname === "avata") {
+        paramClassname = "avatar"
+    } else {
+        // logic
+    }
 
     return (
         //ui - jsx
